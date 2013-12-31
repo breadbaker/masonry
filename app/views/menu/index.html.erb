@@ -1,0 +1,150 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>The Masonry Seattle - Craft Beer and Woodfire Pizza</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+		<meta name="author" content="">
+
+		<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+		<link href="http://fonts.googleapis.com/css?family=Roboto+Condensed:700" rel="stylesheet" type='text/css'>
+
+	</head>
+	<body>
+
+    <style>
+    body{
+    	background-color:#454545;
+    	padding: 0 25px;
+    }
+    #wrap{
+    	margin: 0 auto;
+    	max-width: 1000px;
+    }
+    #container{
+    	background-color:#eee;
+    	border: 10px solid #393939;
+    	padding:25px;
+    }
+
+    .navbar {
+    	min-height: 40px;
+    	padding-left: 0px;
+    }
+    .navbar-nav {
+    	margin-top: 0px;
+    	margin-bottom: 0px;
+    }
+
+    .navbar-nav > li > a {
+    	padding-top: 10px;
+    	padding-bottom: 10px;
+    }
+    h1{
+    	text-transform: uppercase;
+    	margin-top: 0;
+    	font-size: 2.7em;
+    	font-family: 'Roboto Condensed', sans-serif;
+    	font-weight: bold;
+    	letter-spacing: 4px;
+    }
+    h2{
+    	font-size: 24px;
+    	line-height: 1em;
+    	margin-top: 0;
+    }
+    h3{
+    	font-size: 20px;
+    	text-transform: uppercase;
+    }
+    footer{
+    	background:#393939;
+    	color: #fff;
+    	width: 100%;
+    	padding: 0px 25px;
+    }
+    </style>
+
+    <script type='text/json' id='base-menu'>
+    <%= @menu.html_safe %>
+    </script>
+		<div id="wrap">
+			<div id="container">
+				<div class="navbar">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="index.html">Home</a></li>
+						<li><a href="menu.html">Menus</a></li>
+					</ul>
+				</div>
+
+					<div class="row">
+						<div class="col col-sm-12 col-lg-4">
+							<h1>The Masonry</h1>
+						</div>
+						<div class="col col-sm-12 col-lg-4">
+							<h2>Craft Beer, Fine Wine, and Woodfire Pizza</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col col-sm-4 col-lg-4">
+							<center><img src="http://themasonryseattle.com/img/pizza.jpg" class="img-responsive" alt="The Masonry Pizza" /></center>
+						</div>
+						<div class="col col-sm-5 col-lg-5">
+							<h3>About</h3>
+							<p>Specializing in craft beer, wood-fired pizza, and hand selected wines. Come chat with our bartenders and watch our chefs at work. 14 beer taps, 2 cider taps, and 5 wine taps. Located in Uptown at 1st Ave. North and Roy St.</p>
+              <% if @special %>
+              <h3>Special</h3>
+              <p><%= @special %></p>
+              <% end %>
+
+						</div>
+						<div class="col col-sm-3 col-lg-3">
+							<h3>Visit</h3>
+							<p>Open 7 days a week<br>
+							<strong>Lunch</strong> 11:30am - 2:00pm<br>
+							<strong>Snacks</strong> 2:00pm - 5:00pm<br>
+							<strong>Dinner</strong> 5:00pm - midnight<br>
+							<strong>Beer</strong> All day every day<br>
+							<em>Age 21+</em></p>
+
+							<address>
+								<strong>The Masonry</strong><br>
+								<a href="https://maps.google.com/maps?q=the+masonry&hl=en&ll=47.627512,-122.355015&spn=0.007534,0.011888&sll=47.625547,-122.355689&sspn=0.007535,0.011888&t=m&z=16&iwloc=A" target="_blank">20 Roy St.<br>
+								Seattle, WA 98109</a>
+							</address>
+						</div>
+					</div><!--end row -->
+
+					<div id="menu">
+
+					</div>
+					<div class="row">
+						<div class="col-lg-12">
+							<h4>For a full list of our bottled beers <a href="menu.html">visit our menu page</a>.</h4>
+						</div>
+					</div>
+
+				</div>
+				<footer>
+					<div class="container">
+						<div class="pull-left">
+							<p>20 Roy St. Seattle, WA 98109<br>
+							(206) 453-4375<br>
+							<a href="mailto:info@themasonryseattle.com">info@themasonryseattle.com</a>
+						</p>
+						</div>
+						<div class="pull-right">
+							<p class="text-right">
+								Find us on:<br>
+								<a href="https://www.facebook.com/TheMasonryPizza" target="_blank">Facebook</a><br>
+								<a href="https://twitter.com/TheMasonryPizza" target="_blank">Twitter</a>
+							</p>
+						</div>
+					</div>
+				</footer>
+			</wrap>
+		</body>
+
+</html>
