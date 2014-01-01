@@ -5,4 +5,8 @@ class Notifier < ActionMailer::Base
     mail( to: 'danielebaker@gmail.com', subject: 'subject')
   end
 
+  def receive(email)
+    puts email
+  end
+
 end

@@ -10,7 +10,7 @@ Masonry::Application.routes.draw do
 
   get 'notify', to: 'menu#notify'
 
-  post '/email_processor', to: 'inbound#email'
-
-  get '/email_processor', to: 'inbound#email'
+  # post '/email_processor', to: 'inbound#email'
+  #
+  # get '/email_processor', to: 'inbound#email'
 end
