@@ -49,6 +49,7 @@ test:
 
 production:
   adapter: postgresql
+  host: the-masonry.herokuapp.com
   encoding: unicode
   database: masonry_production
   pool: 5
