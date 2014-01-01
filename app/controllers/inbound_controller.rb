@@ -5,4 +5,5 @@ class InboundController < ApplicationController
       name: params["Body"]
     })
   end
+
 end
