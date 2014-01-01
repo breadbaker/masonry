@@ -5,7 +5,7 @@ require File.expand_path('../application', __FILE__)
 Masonry::Application.initialize!
 
 ActionMailer::Base.smtp_settings = {
-  :user_name => ENV['SENDGRID_USER'],
+  :user_name => ENV['SENDGRID_USERNAME'],
   :password => ENV['SENDGRID_PASSWORD'],
   :domain => 'the-masonry.herokuapp.com',
   :address => 'smtp.sendgrid.net',
