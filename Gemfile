@@ -25,6 +25,9 @@ gem 'jquery-rails'
 gem 'twilio-ruby'
 gem 'figaro'
 
+gem "paperclip"
+gem "aws-sdk"
+
 gem 'griddler'
 
 # To use ActiveModel has_secure_password

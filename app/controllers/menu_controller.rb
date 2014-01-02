@@ -2,7 +2,11 @@ class MenuController < ApplicationController
 
   def index
     @menu = File.read(Rails.public_path+'/menu.json')
-    @special = Special.last.name if Special.last
+    special = Special.last
+    if special
+      @name = special.name
+      @image = special.image.url(:big) if special.image
+    end
   end
 
   def menu
