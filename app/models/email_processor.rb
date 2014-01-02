@@ -4,10 +4,10 @@ class EmailProcessor
     # all of your application-specific code here - creating models,
     # processing reports, etc
 
-    if  email.attachements > 0
+    if  email.attachments[0]
       Special.create!({
         name: email.subject,
-        image: email["attachment1"]
+        image: email.attachments[0]
       })
     end
   end
