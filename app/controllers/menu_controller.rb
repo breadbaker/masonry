@@ -5,7 +5,7 @@ class MenuController < ApplicationController
     special = Special.last
     if special
       @name = special.name
-      @image = special.image.url(:big) if special.image
+      @image = special.image.url(:big) if special.image.exists?
     end
   end
 

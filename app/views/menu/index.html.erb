@@ -89,16 +89,21 @@
 					</div>
 					<div class="row">
 						<div class="col col-sm-4 col-lg-4">
-							<center><img src="http://themasonryseattle.com/img/pizza.jpg" class="img-responsive" alt="The Masonry Pizza" /></center>
-						</div>
-						<div class="col col-sm-5 col-lg-5">
               <% if @name %>
                 <h3>Special</h3>
                 <p><%= @name %></p>
                 <% if @image %>
-                  <img src=<%= @image %>>
+                <center><img src="<%= @image %>" class="img-responsive" alt="The Masonry Pizza" /></center>
+                  <img src=>
+                <% else %>
+                  <center><img src="http://themasonryseattle.com/img/pizza.jpg" class="img-responsive" alt="The Masonry Pizza" /></center>
                 <% end %>
-              <% end %>
+              <% else %>
+              <center><img src="http://themasonryseattle.com/img/pizza.jpg" class="img-responsive" alt="The Masonry Pizza" /></center>
+
+
+						</div>
+						<div class="col col-sm-5 col-lg-5">
 							<h3>About</h3>
 							<p>Specializing in craft beer, wood-fired pizza, and hand selected wines. Come chat with our bartenders and watch our chefs at work. 14 beer taps, 2 cider taps, and 5 wine taps. Located in Uptown at 1st Ave. North and Roy St.</p>
 
